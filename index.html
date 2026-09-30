@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>RE:COFFEE | Nagoya</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f7f5f0;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 24px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #f7f5f0;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: 600;
+      letter-spacing: 2px;
+    }
+
+    nav a {
+      color: #222;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 12px;
+      letter-spacing: 1px;
+    }
+
+    .hero {
+      min-height: 75vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .hero h1 {
+      font-size: clamp(55px, 12vw, 130px);
+      font-weight: 500;
+      letter-spacing: -4px;
+      line-height: 0.9;
+    }
+
+    .hero p {
+      margin-top: 25px;
+      font-size: 14px;
+      letter-spacing: 3px;
+    }
+
+    section {
+      padding: 100px 8%;
+    }
+
+    .section-title {
+      font-size: 12px;
+      letter-spacing: 3px;
+      margin-bottom: 30px;
+      color: #777;
+    }
+
+    .about {
+      max-width: 850px;
+    }
+
+    .about h2 {
+      font-size: clamp(30px, 6vw, 60px);
+      font-weight: 400;
+      line-height: 1.2;
+    }
+
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+    }
+
+    .category {
+      background: #ebe7df;
+      min-height: 300px;
+      padding: 30px;
+      display: flex;
+      align-items: flex-end;
+      font-size: 22px;
+    }
+
+    .menu {
+      background: #222;
+      color: #fff;
+    }
+
+    .menu h2 {
+      font-size: 42px;
+      font-weight: 400;
+      margin-bottom: 50px;
+    }
+
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 17px 0;
+      border-bottom: 1px solid #555;
+    }
+
+    .location h2 {
+      font-size: 40px;
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+
+    .instagram {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 14px 28px;
+      border: 1px solid #222;
+      color: #222;
+      text-decoration: none;
+      letter-spacing: 2px;
+      font-size: 12px;
+    }
+
+    footer {
+      padding: 50px 8%;
+      font-size: 12px;
+      border-top: 1px solid #ddd;
+    }
+
+    @media (max-width: 700px) {
+
+      nav {
+        display: none;
+      }
+
+      .hero h1 {
+        letter-spacing: -2px;
+      }
+
+      .categories {
+        grid-template-columns: 1fr;
+      }
+
+      .category {
+        min-height: 180px;
+      }
+
+      section {
+        padding: 75px 7%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">RE:COFFEE</div>
+
+  <nav>
+    <a href="#about">ABOUT</a>
+    <a href="#menu">MENU</a>
+    <a href="#access">ACCESS</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div>
+      <h1>RE:<br>COFFEE</h1>
+      <p>COFFEE · MATCHA · DONUTS</p>
+      <p>NAGOYA, JAPAN</p>
+    </div>
+  </section>
+
+
+  <section id="about">
+    <div class="about">
+
+      <p class="section-title">ABOUT US</p>
+
+      <h2>
+        A small coffee space<br>
+        where coffee, matcha<br>
+        and craftsmanship meet.
+      </h2>
+
+    </div>
+  </section>
+
+
+  <section>
+
+    <div class="categories">
+
+      <div class="category">
+        COFFEE
+      </div>
+
+      <div class="category">
+        MATCHA
+      </div>
+
+      <div class="category">
+        DONUTS
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section class="menu" id="menu">
+
+    <p class="section-title">OUR MENU</p>
+
+    <h2>Drinks & Sweets</h2>
+
+    <div class="menu-item">
+      <span>Cafe Latte</span>
+      <span>¥750</span>
+    </div>
+
+    <div class="menu-item">
+      <span>Nishio Matcha Latte</span>
+      <span>¥950</span>
+    </div>
+
+    <div class="menu-item">
+      <span>Hojicha Latte</span>
+      <span>¥950</span>
+    </div>
+
+    <div class="menu-item">
+      <span>Black Sesame Cafe Latte</span>
+      <span>¥950</span>
+    </div>
+
+    <div class="menu-item">
+      <span>Espresso Tonic</span>
+      <span>¥800</span>
+    </div>
+
+    <div class="menu-item">
+      <span>Iced Coffee</span>
+      <span>¥700</span>
+    </div>
+
+    <div class="menu-item">
+      <span>Hot Coffee</span>
+      <span>¥650</span>
+    </div>
+
+    <div class="menu-item">
+      <span>Soy & Okara Donut</span>
+      <span>¥450</span>
+    </div>
+
+  </section>
+
+
+  <section class="location" id="access">
+
+    <p class="section-title">VISIT US</p>
+
+    <h2>Nagoya, Japan</h2>
+
+    <p>
+      Noritake Shinmachi<br>
+      Nishi-ku, Nagoya
+    </p>
+
+    <p style="margin-top:20px;">
+      OPEN 11:00 — 17:00
+    </p>
+
+    <a
+      class="instagram"
+      href="https://www.instagram.com/recoffee2026/"
+      target="_blank"
+    >
+      INSTAGRAM
+    </a>
+
+  </section>
+
+</main>
+
+
+<footer>
+
+  <strong>RE:COFFEE</strong>
+
+  <br><br>
+
+  COFFEE · MATCHA · DONUTS<br>
+  NAGOYA, JAPAN
+
+  <br><br>
+
+  © 2026 RE:COFFEE
+
+</footer>
+
+</body>
+</html>
